@@ -3,7 +3,7 @@ FROM alpine:3.7
 
 RUN apk update && apk upgrade
 RUN apk add openrc
-RUN apk add mysql mysql-client
+RUN apk add --no-cash mysql mysql-client
 RUN apk add bash
 RUN mkdir /temp
 
